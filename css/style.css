@@ -1,108 +1,53 @@
+.main-grid-block {
+  height: 100%;
+  width: 53%;
+  padding: 25px; }
 
-.main-grid-block{
+.grid {
+  height: 100px;
+  width: 100px;
+  display: inline-block; }
 
-	height:100%;
-	width:53%;
-	padding:25px;
-	border:1px solid black;
-}
+.background {
+  background: url("images/profile_pic.jpg") center fixed;
+  /*repeat center center fixed; */
+  background-repeat: repeat;
+  background-attachment: fixed;
+  position: relative; }
 
-.grid{
-	height:100px;
-	width:100px;
-	background-color: blue;
-	display:inline-block;
-}
+.second-grid-block {
+  height: 400px;
+  width: 53%;
+  padding: 25px;
+  margin-top: 10px;
+  /*position: relative;*/ }
 
-.background{
-	background: url('images/profile_pic.jpg') center fixed; /*repeat center center fixed; */
-	background-repeat: repeat;
-	background-attachment: fixed;
-	position: relative;
-}
+.main_circle {
+  margin-left: 25%;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 100;
+  overflow: hidden; }
 
+.image_text {
+  color: white;
+  font-size: 0;
+  position: absolute;
+  margin-top: 135px;
+  margin-left: 80px;
+  z-index: 100; }
 
-
-/*.main_circle{
-	height:300px;
-	width:300px;
-	margin:0 26%;
-	background-color: blue;
-	border-radius: 50%;
-
-}*/
-
-/*.second-grid-block{
-	height:400px;
-	width:53%;
-	padding:25px;
-	margin-top: 10px;
-	position: relative;
-	border: 1px solid black ;
-	background-color: black;
-	overflow: hidden;
-
-
-}*/
-
-
-
-
-/*.circle_image{
-	background: url('images/flip.jpg');
-	position: relative;
-}*/
-
-/*
-.layer{
-	background-color: rgba(248, 247, 216, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}*/
-
-.second-grid-block{
-	height:400px;
-	width:53%;
-	padding:25px;
-	margin-top: 10px;
-	position: relative;
-	border: 1px solid black ;
-	/*background-color: black;*/
-	overflow: hidden;
-}
-
-.main_circle{
-	margin-left: 25%;
-	height:300px;
-	width:300px;
-	border-radius: 50%;
-	background-color: black;
-	z-index: 100;
-	overflow: hidden;
-
-}
-.image_text{
-	color:white;
-	font-size: 0;
-	position: absolute;
-	margin-top:135px;
-	margin-left:80px;
-	z-index: 100;
-}
-
-
-
-.main_circle img{
+.main_circle img {
   width: auto;
-  height : auto;
+  height: auto;
   max-height: 100%;
   max-width: 100%;
-  /*border-radius: 50%;*/
-  /*position: relative;*/
   left: 0;
-  top: 0;
-}
+  top: 0; }
 
+body {
+  background: linear-gradient(to bottom, #3b5da0, #71c09c); }
+
+/*# sourceMappingURL=style.css.map */
