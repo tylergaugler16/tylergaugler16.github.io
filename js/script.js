@@ -4,16 +4,30 @@
 // 	path: 			'/v2/verses/eng-GNTD:Acts.8.34.js'
 // };
 
+
+
 $(document).ready(function(){
 	$('.main_circle').on('mouseenter',(function(){
-	addText();
-	addFilter();
-		
+		addText();
+		addFilter();
+			
 	}));
 
 	$('.main_circle').on('mouseleave',(function(){
-	removeText();
-	removeFilter();
+		removeText();
+		removeFilter();
+		
+	}));
+
+	$('.main_circle').on('click',(function(){
+		console.log('in function');
+		if($('.popout').css('display')=='none'){
+			console.log("yeet");
+		moveLeft();
+	}
+		else{
+		moveRight();
+	}
 		
 	}));
 
@@ -60,4 +74,15 @@ function removeFilter(){
 			'filter'		 : 'opacity(100%'
 		});
 };
+
+function moveLeft(){
+	$('.main_circle').css('margin-left', 0);
+	$('.popout').css('display','inline');
+};
+
+function moveRight(){
+	$('.popout').css('display','none');
+	$('.main_circle').css('margin-left', '36%');
+};
+
 

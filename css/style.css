@@ -17,19 +17,22 @@
 
 .second-grid-block {
   height: 400px;
-  width: 53%;
+  width: 100%;
   padding: 25px;
   margin-top: 10px;
-  /*position: relative;*/ }
+  /*position: relative;*/
+  background-color: #e1e1dd; }
 
 .main_circle {
-  margin-left: 25%;
+  margin-left: 36%;
   height: 300px;
   width: 300px;
   border-radius: 50%;
   background-color: black;
   z-index: 100;
-  overflow: hidden; }
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid purple; }
 
 .image_text {
   color: white;
@@ -46,6 +49,15 @@
   max-width: 100%;
   left: 0;
   top: 0; }
+
+.popout {
+  background-color: #e1e1dd;
+  width: 800px;
+  height: 100%;
+  float: right;
+  display: inline-block;
+  border: 1px solid red;
+  display: none; }
 
 body {
   background: linear-gradient(to left, #3b5da0, #71c09c); }
