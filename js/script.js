@@ -1,3 +1,9 @@
+// var $options= {
+// 	host: 		    'https://bibles.org',
+// 	autorization:   'lMA8qeVr2vfJOqTr47J08pokB082519CiMa7vf5m',
+// 	path: 			'/v2/verses/eng-GNTD:Acts.8.34.js'
+// };
+
 $(document).ready(function(){
 	$('.main_circle').on('mouseenter',(function(){
 	addText();
@@ -10,6 +16,23 @@ $(document).ready(function(){
 	removeFilter();
 		
 	}));
+
+// $('.main_circle').click(function() {
+//   $.ajax({
+//   //The URL to process the request
+//     'url' : 'http://bibles.org/v2/verses/eng-GNTD:Acts.8.34.js',
+//     'authentication' : 'lMA8qeVr2vfJOqTr47J08pokB082519CiMa7vf5m',
+//     'type' : 'GET',
+//     'dataType' : 'jsonp',
+//   //The response from the server
+//     'success' : function(data) {
+//       if (data == "success") {
+//         alert('request sent!');
+//       }
+//     }
+
+//   });
+// });
 
 
 });
