@@ -29,24 +29,32 @@ $gray:rgb(225,225,221);
 	background-color:$gray;
 	margin-bottom:0;
 	border:1px solid yellow;
+	padding-left:36%;
+	z-index:100;
+	// position:fixed;
+	// bottom:20px;
 
-
-	// .first-btn{
-	// 	border:1px solid green;
-	// 	margin-left: 50%;
-	// }
 	button{
-		float:right;
 		display:inline-block;
-		margin-left:200px auto;
+		margin-right:100px;
 	}
+	.space{
+		width:100px;
+	}
+	
 
 }
+.stick{
+	 position: fixed;
+     top: 0;
+     z-index:1000;
+	}
+
 
 
 
 .second-grid-block{
-	height:400px;
+	height:1400px;
 	width:100%;
 	padding:25px;
 	// margin-top: 10px;
@@ -98,6 +106,6 @@ $gray:rgb(225,225,221);
 body{
 	
 
-    background: linear-gradient(to left, $blue, $green);
+    background: linear-gradient(to bottom, $blue, $green);
 
 }

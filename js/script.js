@@ -6,7 +6,11 @@
 
 
 
+
 $(document).ready(function(){
+var fixmeTop = $('div.button-navbar').offset().top;  
+	
+
 	$('.main_circle').on('mouseenter',(function(){
 		addText();
 		addFilter();
@@ -22,31 +26,44 @@ $(document).ready(function(){
 	$('.main_circle').on('click',(function(){
 		console.log('in function');
 		if($('.popout').css('display')=='none'){
-			console.log("yeet");
+			
 		moveLeft();
 	}
 		else{
 		moveRight();
 	}
-		
+
 	}));
 
-// $('.main_circle').click(function() {
-//   $.ajax({
-//   //The URL to process the request
-//     'url' : 'http://bibles.org/v2/verses/eng-GNTD:Acts.8.34.js',
-//     'authentication' : 'lMA8qeVr2vfJOqTr47J08pokB082519CiMa7vf5m',
-//     'type' : 'GET',
-//     'dataType' : 'jsonp',
-//   //The response from the server
-//     'success' : function(data) {
-//       if (data == "success") {
-//         alert('request sent!');
-//       }
-//     }
+	$(window).on('scroll',(function() {    
+	           
+	
+    var currentScroll = $(window).scrollTop(); 
 
-//   });
-// });
+    if (currentScroll >= fixmeTop) {           
+        $('.button-navbar').addClass('stick');
+    }else {                          
+    console.log('here');            
+        $('.button-navbar').removeClass('stick');
+        
+    }
+
+	}));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
@@ -85,4 +102,23 @@ function moveRight(){
 	$('.main_circle').css('margin-left', '36%');
 };
 
+
+
+
+// $('.main_circle').click(function() {
+//   $.ajax({
+//   //The URL to process the request
+//     'url' : 'http://bibles.org/v2/verses/eng-GNTD:Acts.8.34.js',
+//     'authentication' : 'lMA8qeVr2vfJOqTr47J08pokB082519CiMa7vf5m',
+//     'type' : 'GET',
+//     'dataType' : 'jsonp',
+//   //The response from the server
+//     'success' : function(data) {
+//       if (data == "success") {
+//         alert('request sent!');
+//       }
+//     }
+
+//   });
+// });
 

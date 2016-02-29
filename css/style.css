@@ -20,14 +20,22 @@
   width: 100%;
   background-color: #e1e1dd;
   margin-bottom: 0;
-  border: 1px solid yellow; }
+  border: 1px solid yellow;
+  padding-left: 36%;
+  z-index: 100; }
   .button-navbar button {
-    float: right;
     display: inline-block;
-    margin-left: 200px auto; }
+    margin-right: 100px; }
+  .button-navbar .space {
+    width: 100px; }
+
+.stick {
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
 
 .second-grid-block {
-  height: 400px;
+  height: 1400px;
   width: 100%;
   padding: 25px;
   /*position: relative;*/
@@ -70,6 +78,6 @@
   display: none; }
 
 body {
-  background: linear-gradient(to left, #3b5da0, #71c09c); }
+  background: linear-gradient(to bottom, #3b5da0, #71c09c); }
 
 /*# sourceMappingURL=style.css.map */
