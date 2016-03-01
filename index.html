@@ -5,6 +5,7 @@
 	<title>Tyler Gaugler</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="misc/font-awesome/css/font-awesome.min.css">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -14,61 +15,6 @@
   
 </head>
 <body>
-	<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="http://google.com/">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-	<p>Hola Mundo!</p>
-
 
 
 <div class="container-fluid main-grid-block">
@@ -124,8 +70,48 @@
   <div class="main_circle"> 
       <span class="image_text">Tyler Gaugler</span>
       <img src="css/images/flip.jpg" alt="" >
+      <div class="bio">
+        <a href=""><i class="fa fa-github fa-5x"></i></a><br>
+        <a href=""><i class="fa fa-google fa-5x"></i></a><br>
+        <a href=""><i class="fa fa-facebook fa-5x"></i></a>
+      </div> <!-- bio -->
   </div>
-  <div class="popout">Hello</div>
+  <div class="popout">
+    <span class="header bold">EDUCATION</span><br>
+    <span class="indent bold">Bachelor of Science in Computer Science, expected June 2017</span><br>
+    <span class="indent bold">Queens College, City University of New York</span><br><br>
+    <span class="header bold">EXPERIENCE</span>
+        <br>
+        <span class="bold">Software Developer Intern</span><span class="right bold">January 2016-May 2016</span>
+        <br>
+        <span class="bold">Waywire, New York City</span>
+        <br>
+        <ul>
+          <li> <span>Worked on API v2, allowing users to specify exactly what resources to include in the response.</span> </li>
+          <li><span>Wrote automated tests for web based video editor that checked for valid http responses from the server.</span></li>
+          <li><span>Minor bug fixes for a variety of projects.</span></li>
+        </ul>
+        <br>
+        <span class="header bold">SKILLS &amp; TECHNOLOGIES</span><br>
+        <span class="bold indent">Most experienced with: </span><span class="minor-indent">Java, Ruby, HTML/CSS </span><br>
+        <span class="bold indent">Some experiene with: </span><span class="minor-indent">JavaScript, C++</span><br>
+        <span class="bold indent">Some exposure to: </span><span class="minor-indent">Ruby on Rails, MySQL, Node.js</span><br>
+        <span class="bold indent">Frameworks/Libraries/Tools: </span><span class="minor-indent">Git, jQuery,Bootstrap, Grunt, Sass, RSpec, MVC, FTP</span><br><br>
+        <span class="header bold">PROJECTS</span><br>
+        <span class="bold indent"><a href="http://maspethbiblechurch.com/">maspethbiblechurch.com</a><span class="bold"> (html, css, bootstrap)</span></span><br>
+        <span>Individually developed and designed a website for the church I attend, Maspeth Bible Church, using HTML/CSS and Bootstrap. The site is still maintained and is in need of constant updating. </span><br>
+        <span class="bold indent"><u>Blogger App</u></span><span class="bold"> (ruby on rails, html, css)</span><br>
+        <span>From following along with “The Odin Project”, I developed a blogging web application using Ruby on Rails where users can log in to create, add, and delete blog posts. </span><br>
+        <span class="bold indent"><u>BigDecimalInt</u></span><span class="bold"> (java)</span><br>
+        <span>A Java library that allows for the storing of numbers that are too big to fit in the primitive data type int. Similar to the library BigInteger, the methods addition, multiplication and comparator have all been implanted. Very handy when calculations need to be made that are larger than the maximum number that a 32-bit int variable can store.</span><br>
+        <span class="bold indent"><u>GTmetrix Extension</u></span><span class="bold"> (javascript, html, css)</span><br>
+        <span>A Google Chrome extension that will allow you to use GTmetrix to check the speed of the current page you are browsing.</span><br>
+        <span class="bold indent"><u>Collection of Command Line Games</u></span><span class="bold"> (ruby)</span><br>
+        <span>Users can download code to play a selection of games via the command line including Hangman, Tic-Tac-Toe, and Mastermind. All scripts were written in ruby and make use of serialization, so games can be saved and loaded for future use. </span><br>
+
+
+  </div> <!-- popout -->
+
 
 </div>
 

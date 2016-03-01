@@ -42,9 +42,20 @@ var fixmeTop = $('div.button-navbar').offset().top;
 
     if (currentScroll >= fixmeTop) {           
         $('.button-navbar').addClass('stick');
-    }else {                          
-    console.log('here');            
+        $('.button-navbar').css({
+        	'background-color':'rgb(225,225,221',
+        	'padding-top': '12px',
+        	'border-radius': '10%'
+        });
+        moveLeft();
+
+    }else {                                     
         $('.button-navbar').removeClass('stick');
+        $('.button-navbar').css({
+        	'background-color':''
+        	// 'padding-left' : '32%'
+        });
+        // moveRight();
         
     }
 
@@ -58,15 +69,9 @@ var fixmeTop = $('div.button-navbar').offset().top;
 
 
 
-
-
-
-
-
-
-
-
 });
+
+
 
 function addText(){
 	$('.image_text').css('font-size','2.5em');
