@@ -40,9 +40,28 @@ $('.main_circle').on('mouseenter',(function(){
 
 	// to go scroll to experience section on button click
 
-	// $('button.experience').on('click',function(){
-	// 	$("html, body").scrollTop($(element).offset().top);
-	// });
+	$('button.experience').on('click',function(){
+		moveLeft();
+		$('html, body').animate({
+        scrollTop: (experienceTop-90)
+    	}, 1000);
+	});
+
+	$('button.skills').on('click',function(){
+		moveLeft();
+		$('html, body').animate({
+        scrollTop: (skillsTop-90)
+    	}, 1000);
+	});
+
+	$('button.projects').on('click',function(){
+		moveLeft();
+		$('html, body').animate({
+        scrollTop: (projectTop-90)
+    	}, 1000);
+	});
+
+
 
 	$(window).on('scroll',(function() {    
 	           

@@ -1,5 +1,5 @@
 .top-block {
-  height: 400px;
+  height: 600px;
   width: 100%;
   margin: 0; }
   .top-block .main-block {
@@ -17,10 +17,6 @@
       margin-top: 3%;
       font-size: 4em;
       color: white; }
-
-.background {
-  background-attachment: fixed;
-  position: relative; }
 
 .button-navbar {
   height: 50px;
@@ -126,6 +122,6 @@
     height: 10em; }
 
 body {
-  background: linear-gradient(to bottom, #3b5da0, #71c09c); }
+  background: linear-gradient(to right, #3b5da0, #71c09c); }
 
 /*# sourceMappingURL=style.css.map */

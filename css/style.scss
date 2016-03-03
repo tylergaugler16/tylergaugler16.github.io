@@ -4,7 +4,7 @@ $green:#71c09c;
 $gray:rgb(225,225,221);
 
 .top-block{
-	height:400px;
+	height:600px;
 	width:100%;
 	margin:0;
 	// padding:25px;
@@ -29,27 +29,13 @@ $gray:rgb(225,225,221);
 }
 
 
-
-.background{
-	// background: url('images/profile_pic.jpg') center fixed repeat center center fixed; 
-	// background-repeat: none;
-	
-    // background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-}
-
 .button-navbar{
 	height:50px;
 	width:100%;
-	// background-color:$gray;
 	margin-bottom:0;
-	// border:1px solid yellow;
 	padding-left:32%;
 	padding-top:5px;
 	z-index:100;
-	// position:fixed;
-	// bottom:20px;
 
 	button{
 		display:inline-block;
@@ -185,6 +171,6 @@ $gray:rgb(225,225,221);
 body{
 	
 
-    background: linear-gradient(to bottom, $blue, $green);
+    background: linear-gradient(to right, $blue, $green);
 
 }
