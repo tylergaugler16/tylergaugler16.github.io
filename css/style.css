@@ -1,17 +1,24 @@
-.main-grid-block {
-  height: 100%;
-  width: 53%;
-  padding: 25px; }
-
-.grid {
-  height: 100px;
-  width: 100px;
-  display: inline-block; }
+.top-block {
+  height: 400px;
+  width: 100%;
+  margin: 0; }
+  .top-block .main-block {
+    height: 200px;
+    width: 100%;
+    background-color: #e1e1dd;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    .top-block .main-block span {
+      display: block;
+      margin-top: 3%;
+      font-size: 4em;
+      color: white; }
 
 .background {
-  background: url("images/profile_pic.jpg") center fixed;
-  /*repeat center center fixed; */
-  background-repeat: repeat;
   background-attachment: fixed;
   position: relative; }
 
@@ -104,6 +111,19 @@
     font-weight: bold; }
   .popout a:active {
     color: black; }
+
+.form {
+  margin-top: 100px;
+  height: 500px; }
+  .form input {
+    margin: 20px; }
+  .form textarea {
+    margin: 20px; }
+  .form #name {
+    width: 50%; }
+  .form #message {
+    width: 50%;
+    height: 10em; }
 
 body {
   background: linear-gradient(to bottom, #3b5da0, #71c09c); }

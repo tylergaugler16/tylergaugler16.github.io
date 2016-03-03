@@ -38,6 +38,12 @@ $('.main_circle').on('mouseenter',(function(){
 
 	}));
 
+	// to go scroll to experience section on button click
+
+	// $('button.experience').on('click',function(){
+	// 	$("html, body").scrollTop($(element).offset().top);
+	// });
+
 	$(window).on('scroll',(function() {    
 	           
 	
@@ -47,7 +53,7 @@ $('.main_circle').on('mouseenter',(function(){
            
         $('.button-navbar').addClass('stick');
         $('.button-navbar').css({
-        	'background-color':'rgb(225,225,221',
+        	'background-color':'rgb(225,225,221)',
         	'padding-top': '12px',
         	'border-radius': '10%'
         });
@@ -65,7 +71,7 @@ $('.main_circle').on('mouseenter',(function(){
     
     if(currentScroll >= (experienceTop-55) && currentScroll <= (skillsTop-55)){
     	
-    	$('button.experience').css('background-color', 'black');
+    	$('button.experience').css('background-color', 'rgb(157,157,154)');
    
     }else{
  		$('button.experience').css('background-color','white');
@@ -74,13 +80,13 @@ $('.main_circle').on('mouseenter',(function(){
 
     if(currentScroll >= (skillsTop-55) && currentScroll <= (projectTop-55)){
     	console.log("skills: "+skillsTop);
-    	$('button.skills').css('background-color','black');
+    	$('button.skills').css('background-color','rgb(157,157,154)');
     }else{
     	$('button.skills').css('background-color','white');
     }
 
     if(currentScroll >= (projectTop-55)){
-    	$('button.projects').css('background-color','black');
+    	$('button.projects').css('background-color','rgb(157,157,154)');
     }else{
     	$('button.projects').css('background-color','white');
     }

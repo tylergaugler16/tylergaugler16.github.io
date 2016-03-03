@@ -3,22 +3,38 @@ $blue:#3b5da0;
 $green:#71c09c;
 $gray:rgb(225,225,221);
 
-.main-grid-block{
-
-	height:100%;
-	width:53%;
-	padding:25px;
+.top-block{
+	height:400px;
+	width:100%;
+	margin:0;
+	// padding:25px;
+	.main-block{
+		height:200px;
+		width:100%;
+		background-color:$gray;
+		position:absolute;
+		margin:0;
+		padding:0;
+		left:0;
+		right:0;
+		text-align: center;
+		span{
+			
+			display:block;
+			margin-top:3%;
+			font-size:4em;
+			color:white;
+		}
+	}
 }
 
-.grid{
-	height:100px;
-	width:100px;
-	display:inline-block;
-}
+
 
 .background{
-	background: url('images/profile_pic.jpg') center fixed; /*repeat center center fixed; */
-	background-repeat: repeat;
+	// background: url('images/profile_pic.jpg') center fixed repeat center center fixed; 
+	// background-repeat: none;
+	
+    // background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 }
@@ -141,6 +157,27 @@ $gray:rgb(225,225,221);
 	a:active{
 		color:black;
 	}
+}
+
+.form{
+	margin-top: 100px;
+	height:500px;
+	input{
+		margin:20px;
+		
+	}
+	textarea{
+		margin:20px;
+	}
+	#name{
+
+		width:50%;
+	}
+	#message{
+		width:50%;
+		height:10em;
+	}
+
 }
 
 
