@@ -4,14 +4,17 @@
 // 	path: 			'/v2/verses/eng-GNTD:Acts.8.34.js'
 // };
 
-
+var experienceTop;
+var skillsTop;
+var projectTop;
 
 
 $(document).ready(function(){
-var fixmeTop = $('div.button-navbar').offset().top;  
-	
+var fixmeTop 	  = $('div.button-navbar').offset().top; 
 
-	$('.main_circle').on('mouseenter',(function(){
+
+
+$('.main_circle').on('mouseenter',(function(){
 		addText();
 		addFilter();
 			
@@ -40,7 +43,8 @@ var fixmeTop = $('div.button-navbar').offset().top;
 	
     var currentScroll = $(window).scrollTop(); 
 
-    if (currentScroll >= fixmeTop) {           
+    if (currentScroll >= fixmeTop) { 
+           
         $('.button-navbar').addClass('stick');
         $('.button-navbar').css({
         	'background-color':'rgb(225,225,221',
@@ -57,6 +61,28 @@ var fixmeTop = $('div.button-navbar').offset().top;
         });
         // moveRight();
         
+    }
+    
+    if(currentScroll >= (experienceTop-55) && currentScroll <= (skillsTop-55)){
+    	
+    	$('button.experience').css('background-color', 'black');
+   
+    }else{
+ 		$('button.experience').css('background-color','white');
+
+    }
+
+    if(currentScroll >= (skillsTop-55) && currentScroll <= (projectTop-55)){
+    	console.log("skills: "+skillsTop);
+    	$('button.skills').css('background-color','black');
+    }else{
+    	$('button.skills').css('background-color','white');
+    }
+
+    if(currentScroll >= (projectTop-55)){
+    	$('button.projects').css('background-color','black');
+    }else{
+    	$('button.projects').css('background-color','white');
     }
 
 	}));
@@ -100,6 +126,11 @@ function removeFilter(){
 function moveLeft(){
 	$('.main_circle').css('margin-left', 0);
 	$('.popout').css('display','inline');
+	experienceTop = $('span.experience').offset().top;
+	skillsTop     = $('span.skills').offset().top;
+	projectTop    = $('span.projects').offset().top;
+
+	
 };
 
 function moveRight(){
