@@ -41,6 +41,7 @@ $('.main_circle').on('mouseenter',(function(){
 	// to go scroll to experience section on button click
 
 	$('button.experience').on('click',function(){
+		displayBottom();
 		moveLeft();
 		$('html, body').animate({
         scrollTop: (experienceTop-90)
@@ -48,6 +49,7 @@ $('.main_circle').on('mouseenter',(function(){
 	});
 
 	$('button.skills').on('click',function(){
+		displayBottom();
 		moveLeft();
 		$('html, body').animate({
         scrollTop: (skillsTop-90)
@@ -55,10 +57,16 @@ $('.main_circle').on('mouseenter',(function(){
 	});
 
 	$('button.projects').on('click',function(){
+		displayBottom();
 		moveLeft();
 		$('html, body').animate({
         scrollTop: (projectTop-90)
     	}, 1000);
+	});
+
+	$('.arrow i').on('click',function(){
+		// $('.arrow i').css('display','none');
+		displayBottom();
 	});
 
 
@@ -72,7 +80,7 @@ $('.main_circle').on('mouseenter',(function(){
            
         $('.button-navbar').addClass('stick');
         $('.button-navbar').css({
-        	'background-color':'rgb(225,225,221)',
+        	'background-color':'#dddde1 ',
         	'padding-top': '12px',
         	'border-radius': '10%'
         });
@@ -163,6 +171,10 @@ function moveRight(){
 	$('.main_circle').css('margin-left', '36%');
 };
 
+function displayBottom(){
+	$('.second-grid-block').css('display','inline');
+	$('.form').css('display','inline');
+}
 
 
 

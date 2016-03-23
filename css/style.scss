@@ -1,17 +1,19 @@
 $orange:#f6af2d;
 $blue:#3b5da0;
+$white:#dddde1 ;
 $green:#71c09c;
 $gray:rgb(225,225,221);
+$dark-gray:#dddde1;
 
 .top-block{
-	height:600px;
+	height:500px;
 	width:100%;
 	margin:0;
 	// padding:25px;
 	.main-block{
-		height:200px;
+		height:100px;
 		width:100%;
-		background-color:$gray;
+		background-color:$white;
 		position:absolute;
 		margin:0;
 		padding:0;
@@ -26,16 +28,33 @@ $gray:rgb(225,225,221);
 			color:white;
 		}
 	}
+	.about{
+		position: relative;
+		margin-top: 20%;
+		height:200px;
+		width:80%;
+		// background-color:$white;
+		background-color:dark-gray;
+		overflow: hidden;
+		padding:10px;
+		// background: rgba(225, 225, 221, 0.5);
+		text-align: center;
+		p{
+			color:white;
+			font-size: 1.5em;
+		}
+	}
 }
 
 
 .button-navbar{
 	height:50px;
 	width:100%;
-	margin-bottom:0;
-	padding-left:32%;
+	// margin-top:-100px;
+	padding-left:28%;
 	padding-top:5px;
 	z-index:100;
+
 
 	button{
 		display:inline-block;
@@ -44,29 +63,37 @@ $gray:rgb(225,225,221);
 	.space{
 		width:100px;
 	}
-	
+
 
 }
 .stick{
 	 position: fixed;
      top: -10px;
      z-index:1000;
+}
+
+.arrow{
+	margin-top:100px;
+	i{
+		color:gray;
+		margin-left: 45%;
 	}
+}
 
 
 
 
 .second-grid-block{
-	height:1200px;
+	height:1100px;
 	width:100%;
 	padding:25px;
-	margin-top: 30px;
+	margin-top: 150px;
 	/*position: relative;*/
-	background-color:$gray;
+	background-color:$white;
 }
 
 .main_circle{
-	margin-left: 36%;
+	margin-left: 32%;
 	height:100%;
 	width:350px;
 	z-index: 100;
@@ -75,7 +102,7 @@ $gray:rgb(225,225,221);
 
 	 .bio{
 		width:100%;
-		height:400px;
+		height:500px;
 		margin-top:150px;
 		padding:25px;
 		i{
@@ -146,7 +173,7 @@ $gray:rgb(225,225,221);
 }
 
 .form{
-	margin-top: 100px;
+	margin-top: 0px;
 	height:500px;
 	input{
 		margin:20px;
@@ -171,6 +198,6 @@ $gray:rgb(225,225,221);
 body{
 	
 
-    background: linear-gradient(to right, $blue, $green);
+    background: linear-gradient(to bottom, $white,$white );
 
 }
