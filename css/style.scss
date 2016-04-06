@@ -31,7 +31,7 @@ $dark-gray:#dddde1;
 	.about{
 		position: relative;
 		margin-top: 20%;
-		height:200px;
+		// height:200px;
 		width:80%;
 		// background-color:$white;
 		background-color:dark-gray;
@@ -48,15 +48,16 @@ $dark-gray:#dddde1;
 
 
 .button-navbar{
-	height:50px;
+	
 	width:100%;
-	// margin-top:-100px;
 	padding-left:28%;
 	padding-top:5px;
 	z-index:100;
+	border:1px solid black;
 
 
 	button{
+		border:1px solid green;
 		display:inline-block;
 		margin-right:100px;
 	}
@@ -201,3 +202,23 @@ body{
     background: linear-gradient(to bottom, $white,$white );
 
 }
+
+
+$breakpoint-tablet: 868px;
+@media (max-width: $breakpoint-tablet) {
+
+	.button-navbar{
+
+		.space{
+			width:0px;
+		}
+
+	}
+  
+}
+
+
+
+
+
+

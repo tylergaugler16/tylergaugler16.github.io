@@ -20,7 +20,6 @@
   .top-block .about {
     position: relative;
     margin-top: 20%;
-    height: 200px;
     width: 80%;
     background-color: dark-gray;
     overflow: hidden;
@@ -31,12 +30,13 @@
       font-size: 1.5em; }
 
 .button-navbar {
-  height: 50px;
   width: 100%;
   padding-left: 28%;
   padding-top: 5px;
-  z-index: 100; }
+  z-index: 100;
+  border: 1px solid black; }
   .button-navbar button {
+    border: 1px solid green;
     display: inline-block;
     margin-right: 100px; }
   .button-navbar .space {
@@ -140,5 +140,9 @@
 
 body {
   background: linear-gradient(to bottom, #dddde1, #dddde1); }
+
+@media (max-width: 868px) {
+  .button-navbar .space {
+    width: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

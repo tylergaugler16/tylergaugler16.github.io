@@ -10,6 +10,7 @@ var projectTop;
 
 
 $(document).ready(function(){
+console.log($(window).width());
 var fixmeTop 	  = $('div.button-navbar').offset().top; 
 
 
@@ -41,7 +42,6 @@ $('.main_circle').on('mouseenter',(function(){
 	// to go scroll to experience section on button click
 
 	$('button.experience').on('click',function(){
-		displayBottom();
 		moveLeft();
 		$('html, body').animate({
         scrollTop: (experienceTop-90)
@@ -49,7 +49,6 @@ $('.main_circle').on('mouseenter',(function(){
 	});
 
 	$('button.skills').on('click',function(){
-		displayBottom();
 		moveLeft();
 		$('html, body').animate({
         scrollTop: (skillsTop-90)
@@ -57,17 +56,13 @@ $('.main_circle').on('mouseenter',(function(){
 	});
 
 	$('button.projects').on('click',function(){
-		displayBottom();
 		moveLeft();
 		$('html, body').animate({
         scrollTop: (projectTop-90)
     	}, 1000);
 	});
 
-	$('.arrow i').on('click',function(){
-		// $('.arrow i').css('display','none');
-		displayBottom();
-	});
+
 
 
 
@@ -158,7 +153,7 @@ function removeFilter(){
 
 function moveLeft(){
 	$('.main_circle').css('margin-left', 0);
-	$('.popout').css('display','inline');
+	$('.popout').css('display','inline-block');
 	experienceTop = $('span.experience').offset().top;
 	skillsTop     = $('span.skills').offset().top;
 	projectTop    = $('span.projects').offset().top;
@@ -171,10 +166,6 @@ function moveRight(){
 	$('.main_circle').css('margin-left', '36%');
 };
 
-function displayBottom(){
-	$('.second-grid-block').css('display','inline');
-	$('.form').css('display','inline');
-}
 
 
 
