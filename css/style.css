@@ -39,19 +39,11 @@
     border: 1px solid green;
     display: inline-block;
     margin-right: 100px; }
-  .button-navbar .space {
-    width: 100px; }
 
 .stick {
   position: fixed;
   top: -10px;
   z-index: 1000; }
-
-.arrow {
-  margin-top: 100px; }
-  .arrow i {
-    color: gray;
-    margin-left: 45%; }
 
 .second-grid-block {
   height: 1100px;
@@ -77,22 +69,20 @@
       color: black;
       margin-left: 38%;
       margin-top: 30px; }
-
-.image_text {
-  color: white;
-  font-size: 0;
-  position: absolute;
-  margin-top: 135px;
-  margin-left: 80px;
-  z-index: 100; }
-
-.main_circle img {
-  margin-left: 7%;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  left: 0;
-  top: 0; }
+  .main_circle .image_text {
+    color: white;
+    font-size: 0;
+    position: absolute;
+    margin-top: 135px;
+    margin-left: 80px;
+    z-index: 100; }
+  .main_circle img {
+    margin-left: 7%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    left: 0;
+    top: 0; }
 
 .popout {
   background-color: white;
@@ -141,8 +131,41 @@
 body {
   background: linear-gradient(to bottom, #dddde1, #dddde1); }
 
-@media (max-width: 868px) {
-  .button-navbar .space {
-    width: 0px; } }
+@media (max-width: 768px) {
+  .top-block {
+    background-color: green;
+    height: 400px; }
+    .top-block .main-block {
+      height: 70px; }
+      .top-block .main-block span {
+        font-size: 2em; }
+    .top-block .about {
+      margin-top: 15%; }
+      .top-block .about p {
+        font-size: 1.25em; }
+
+  .button-navbar {
+    padding-left: 20%; }
+    .button-navbar button {
+      background-color: blue;
+      margin-right: 70px; }
+
+  .second-grid-block .main_circle {
+    margin-left: 0;
+    width: 160px;
+    padding-left: 0;
+    border: 1px solid yellow; }
+    .second-grid-block .main_circle img {
+      height: 150px;
+      width: 150px;
+      margin-left: 0; }
+    .second-grid-block .main_circle bio {
+      padding: 0; }
+      .second-grid-block .main_circle bio i {
+        border: 1px solid red;
+        margin-left: 0; }
+  .second-grid-block .popout {
+    width: 480px;
+    font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */

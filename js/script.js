@@ -16,7 +16,10 @@ var fixmeTop 	  = $('div.button-navbar').offset().top;
 
 
 $('.main_circle').on('mouseenter',(function(){
-		addText();
+		if($(window).width() > 768){
+			addText();
+		}
+		
 		addFilter();
 			
 	}));
