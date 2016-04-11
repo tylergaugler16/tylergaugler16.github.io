@@ -5,7 +5,7 @@
   .top-block .main-block {
     height: 100px;
     width: 100%;
-    background-color: #dddde1;
+    background-color: #666666;
     position: absolute;
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@
     position: relative;
     margin-top: 20%;
     width: 80%;
-    background-color: dark-gray;
+    background-color: #666666;
     overflow: hidden;
     padding: 10px;
     text-align: center; }
@@ -33,10 +33,8 @@
   width: 100%;
   padding-left: 28%;
   padding-top: 5px;
-  z-index: 100;
-  border: 1px solid black; }
+  z-index: 100; }
   .button-navbar button {
-    border: 1px solid green;
     display: inline-block;
     margin-right: 100px; }
 
@@ -51,69 +49,67 @@
   padding: 25px;
   margin-top: 150px;
   /*position: relative;*/
-  background-color: #dddde1; }
-
-.main_circle {
-  margin-left: 32%;
-  height: 100%;
-  width: 350px;
-  z-index: 100;
-  overflow: hidden;
-  display: inline-block; }
-  .main_circle .bio {
-    width: 100%;
-    height: 500px;
-    margin-top: 150px;
-    padding: 25px; }
-    .main_circle .bio i {
+  background-color: #666666; }
+  .second-grid-block .main_circle {
+    margin-left: 32%;
+    height: 90%;
+    width: 350px;
+    z-index: 100;
+    overflow: hidden;
+    display: inline-block; }
+    .second-grid-block .main_circle .bio {
+      width: 100%;
+      height: 500px;
+      margin-top: 150px;
+      padding: 25px; }
+      .second-grid-block .main_circle .bio i {
+        color: black;
+        margin-left: 38%;
+        margin-top: 30px; }
+    .second-grid-block .main_circle .image_text {
+      color: white;
+      font-size: 0;
+      position: absolute;
+      margin-top: 135px;
+      margin-left: 80px;
+      z-index: 100; }
+    .second-grid-block .main_circle img {
+      margin-left: 7%;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      left: 0;
+      top: 0; }
+  .second-grid-block .popout {
+    background-color: white;
+    width: 800px;
+    height: 90%;
+    float: right;
+    display: inline-block;
+    display: none;
+    padding: 20px;
+    line-height: 180%;
+    font-family: Arial;
+    font-size: 14px; }
+    .second-grid-block .popout .header {
+      font-size: 2em;
+      font-family: "Times New Roman"; }
+    .second-grid-block .popout .right {
+      float: right; }
+    .second-grid-block .popout .bold {
+      font-weight: bold; }
+    .second-grid-block .popout .indent {
+      display: inline-block;
+      text-indent: 25px; }
+    .second-grid-block .popout .minor-indent {
+      display: inline-block;
+      text-indent: 5px; }
+    .second-grid-block .popout a {
       color: black;
-      margin-left: 38%;
-      margin-top: 30px; }
-  .main_circle .image_text {
-    color: white;
-    font-size: 0;
-    position: absolute;
-    margin-top: 135px;
-    margin-left: 80px;
-    z-index: 100; }
-  .main_circle img {
-    margin-left: 7%;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    left: 0;
-    top: 0; }
-
-.popout {
-  background-color: white;
-  width: 800px;
-  height: 90%;
-  float: right;
-  display: inline-block;
-  display: none;
-  padding: 20px;
-  line-height: 180%;
-  font-family: Arial;
-  font-size: 14px; }
-  .popout .header {
-    font-size: 2em;
-    font-family: "Times New Roman"; }
-  .popout .right {
-    float: right; }
-  .popout .bold {
-    font-weight: bold; }
-  .popout .indent {
-    display: inline-block;
-    text-indent: 25px; }
-  .popout .minor-indent {
-    display: inline-block;
-    text-indent: 5px; }
-  .popout a {
-    color: black;
-    text-decoration: underline;
-    font-weight: bold; }
-  .popout a:active {
-    color: black; }
+      text-decoration: underline;
+      font-weight: bold; }
+    .second-grid-block .popout a:active {
+      color: black; }
 
 .form {
   margin-top: 0px;
@@ -129,11 +125,11 @@
     height: 10em; }
 
 body {
-  background: linear-gradient(to bottom, #dddde1, #dddde1); }
+  background: linear-gradient(to bottom, #666666, #666666); }
 
 @media (max-width: 768px) {
   .top-block {
-    background-color: green;
+    background-color: blue;
     height: 400px; }
     .top-block .main-block {
       height: 70px; }
@@ -150,22 +146,24 @@ body {
       background-color: blue;
       margin-right: 70px; }
 
-  .second-grid-block .main_circle {
-    margin-left: 0;
-    width: 160px;
-    padding-left: 0;
-    border: 1px solid yellow; }
-    .second-grid-block .main_circle img {
-      height: 150px;
-      width: 150px;
-      margin-left: 0; }
-    .second-grid-block .main_circle bio {
-      padding: 0; }
-      .second-grid-block .main_circle bio i {
-        border: 1px solid red;
+  .second-grid-block {
+    margin-top: 50px; }
+    .second-grid-block .main_circle {
+      margin-left: 0;
+      width: 160px;
+      padding-left: 0;
+      border: 1px solid yellow; }
+      .second-grid-block .main_circle img {
+        height: 150px;
+        width: 150px;
         margin-left: 0; }
-  .second-grid-block .popout {
-    width: 480px;
-    font-size: 12px; } }
+      .second-grid-block .main_circle bio {
+        padding: 0; }
+        .second-grid-block .main_circle bio i {
+          border: 1px solid red;
+          margin-left: 0; }
+    .second-grid-block .popout {
+      width: 480px;
+      font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */
