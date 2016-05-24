@@ -5,13 +5,28 @@ $green:#71c09c;
 $gray:#666666;
 // $dark-gray: #dddde1;
 
+.image-banner {
 
+	img{
+		
+		height:600px; 
+		width:110%;
+		margin-left:-15px;
+		top:0; 
+		display:block;
+
+	}
+	
+	
+	// z-index:-10;
+}
 
 
 .top-block{
 	height:500px;
 	width:100%;
 	margin:0;
+	margin-top:100px;
 	.main-block{
 		height:100px;
 		width:100%;
@@ -53,7 +68,7 @@ $gray:#666666;
 	
 	width:100%;
 	padding-left:32%;
-	padding-top:5px;
+	padding-top:25px;
 	z-index:100;
 
 

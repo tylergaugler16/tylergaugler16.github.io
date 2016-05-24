@@ -1,7 +1,15 @@
+.image-banner img {
+  height: 600px;
+  width: 110%;
+  margin-left: -15px;
+  top: 0;
+  display: block; }
+
 .top-block {
   height: 500px;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  margin-top: 100px; }
   .top-block .main-block {
     height: 100px;
     width: 100%;
@@ -32,7 +40,7 @@
 .button-navbar {
   width: 100%;
   padding-left: 32%;
-  padding-top: 5px;
+  padding-top: 25px;
   z-index: 100; }
   .button-navbar button {
     display: inline-block;
