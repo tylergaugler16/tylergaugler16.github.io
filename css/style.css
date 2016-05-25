@@ -1,12 +1,20 @@
-.image-banner img {
+.image-banner {
+  padding-top: 400px;
   height: 600px;
-  width: 110%;
-  margin-left: -15px;
-  top: 0;
-  display: block; }
+  background: url("images/skyline.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .image-banner span {
+    background: black;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 4em;
+    margin-left: 30px;
+    padding: 5px; }
 
 .top-block {
-  height: 500px;
+  height: 400px;
   width: 100%;
   margin: 0;
   margin-top: 100px; }
@@ -27,7 +35,7 @@
       color: white; }
   .top-block .about {
     position: relative;
-    margin-top: 20%;
+    margin-top: 5%;
     width: 80%;
     background-color: #666666;
     overflow: hidden;
@@ -40,7 +48,7 @@
 .button-navbar {
   width: 100%;
   padding-left: 32%;
-  padding-top: 25px;
+  padding-top: 50px;
   z-index: 100; }
   .button-navbar button {
     display: inline-block;
@@ -55,7 +63,6 @@
   height: 1100px;
   width: 100%;
   padding: 25px;
-  margin-top: 150px;
   /*position: relative;*/
   background-color: #666666; }
   .second-grid-block .main_circle {

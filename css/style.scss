@@ -6,24 +6,26 @@ $gray:#666666;
 // $dark-gray: #dddde1;
 
 .image-banner {
+	padding-top:400px;
+	height:600px;
+	background: url('images/skyline.jpg');
+	background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center;  
 
-	img{
-		
-		height:600px; 
-		width:110%;
-		margin-left:-15px;
-		top:0; 
-		display:block;
-
+	span{
+		background: rgb(0, 0, 0); 
+   	  	background: rgba(0, 0, 0, 0.5);
+		color:white;
+		font-size: 4em;
+		margin-left: 30px;
+		padding:5px;
 	}
-	
-	
-	// z-index:-10;
 }
 
 
 .top-block{
-	height:500px;
+	height:400px;
 	width:100%;
 	margin:0;
 	margin-top:100px;
@@ -47,7 +49,7 @@ $gray:#666666;
 	}
 	.about{
 		position: relative;
-		margin-top: 20%;
+		margin-top: 5%;
 		// height:200px;
 		width:80%;
 		background-color:$gray;
@@ -68,7 +70,7 @@ $gray:#666666;
 	
 	width:100%;
 	padding-left:32%;
-	padding-top:25px;
+	padding-top:50px;
 	z-index:100;
 
 
@@ -92,7 +94,7 @@ $gray:#666666;
 	height:1100px;
 	width:100%;
 	padding:25px;
-	margin-top: 150px;
+	// margin-top: 150px;
 	/*position: relative;*/
 	background-color:$gray;
 

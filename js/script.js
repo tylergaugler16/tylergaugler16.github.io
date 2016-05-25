@@ -77,8 +77,7 @@ var fixmeTop  = $('div.button-navbar').offset().top;
         $('.button-navbar').addClass('stick');
         $('.button-navbar').css({
         	'background-color':'#666666 ',
-        	'padding-top': '12px',
-        	'border-radius': '10%'
+        	'padding-top': '12px'
         });
         moveLeft();
 
