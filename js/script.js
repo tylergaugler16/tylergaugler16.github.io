@@ -13,8 +13,6 @@ $(document).ready(function(){
 
 var fixmeTop  = $('div.button-navbar').offset().top; 
 
-
-
 	$('.main_circle').on('mouseenter',(function(){
 		if($(window).width() > 768){
 			addText();
@@ -76,7 +74,7 @@ var fixmeTop  = $('div.button-navbar').offset().top;
            
         $('.button-navbar').addClass('stick');
         $('.button-navbar').css({
-        	'background-color':'#666666 ',
+        	'background-color':'#eaeaea ',
         	'padding-top': '12px'
         });
         moveLeft();
@@ -84,7 +82,7 @@ var fixmeTop  = $('div.button-navbar').offset().top;
     }else {                                     
         $('.button-navbar').removeClass('stick');
         $('.button-navbar').css({
-        	'background-color':'#666666'
+        	'background-color':'#eaeaea'
         	// 'padding-left' : '32%'
         });
         // moveRight();
@@ -129,11 +127,6 @@ var fixmeTop  = $('div.button-navbar').offset().top;
 });
 
 
-
-
-
-
-
 function addText(){
 	$('.image_text').css('font-size','2.5em');
 	
@@ -164,35 +157,10 @@ function moveLeft(){
 	experienceTop = $('span.experience').offset().top;
 	skillsTop     = $('span.skills').offset().top;
 	projectTop    = $('span.projects').offset().top;
-
-	
-
-
-	
 };
 
 function moveRight(){
 	$('.popout').css('display','none');
 	$('.main_circle').css('margin-left', '36%');
 };
-
-
-
-
-// $('.main_circle').click(function() {
-//   $.ajax({
-//   //The URL to process the request
-//     'url' : 'http://bibles.org/v2/verses/eng-GNTD:Acts.8.34.js',
-//     'authentication' : 'lMA8qeVr2vfJOqTr47J08pokB082519CiMa7vf5m',
-//     'type' : 'GET',
-//     'dataType' : 'jsonp',
-//   //The response from the server
-//     'success' : function(data) {
-//       if (data == "success") {
-//         alert('request sent!');
-//       }
-//     }
-
-//   });
-// });
 

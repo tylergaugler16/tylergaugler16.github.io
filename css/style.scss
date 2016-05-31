@@ -1,18 +1,18 @@
-$orange:#f6af2d;
-$blue:#3b5da0;
-$white:#dddde1 ;
-$green:#71c09c;
-$gray:#666666;
-// $dark-gray: #dddde1;
+$orange:	#f6af2d;
+$blue:		#3b5da0;
+$white:		#dddde1;
+$green:		#71c09c;
+$dark-gray:	#666666;
+$gray: 		#eaeaea;
 
 .image-banner {
+	background-color:$gray;
 	padding-top:400px;
 	height:600px;
 	background: url('images/skyline.jpg');
 	background-size:     cover;                    
     background-repeat:   no-repeat;
     background-position: center center;  
-
 	span{
 		background: rgb(0, 0, 0); 
    	  	background: rgba(0, 0, 0, 0.5);
@@ -23,7 +23,6 @@ $gray:#666666;
 	}
 }
 
-
 .top-block{
 	height:400px;
 	width:100%;
@@ -32,7 +31,7 @@ $gray:#666666;
 	.main-block{
 		height:100px;
 		width:100%;
-		background-color: $gray;
+		background-color: white;
 		position:absolute;
 		margin:0;
 		padding:0;
@@ -40,7 +39,6 @@ $gray:#666666;
 		right:0;
 		text-align: center;
 		span{
-			
 			display:block;
 			margin-top:3%;
 			font-size:4em;
@@ -50,54 +48,41 @@ $gray:#666666;
 	.about{
 		position: relative;
 		margin-top: 5%;
-		// height:200px;
 		width:80%;
 		background-color:$gray;
-		// background-color:dark-gray;
 		overflow: hidden;
 		padding:10px;
-		// background: rgba(225, 225, 221, 0.5);
 		text-align: center;
 		p{
-			color:white;
+			color:$dark-gray;
 			font-size: 1.5em;
 		}
 	}
 }
 
 
-.button-navbar{
-	
+.button-navbar{	
 	width:100%;
 	padding-left:32%;
 	padding-top:50px;
 	z-index:100;
-
-
 	button{
 		display:inline-block;
 		margin-right:100px;
 	}
-
 }
+
 .stick{
 	 position: fixed;
      top: -10px;
      z-index:1000;
 }
 
-
-
-
-
 .second-grid-block{
 	height:1100px;
 	width:100%;
 	padding:25px;
-	// margin-top: 150px;
-	/*position: relative;*/
 	background-color:$gray;
-
 
 .main_circle{
 	margin-left: 32%;
@@ -133,12 +118,10 @@ $gray:#666666;
 	  width:300px;
 	  border-radius: 50%;
 	  left: 0;
-	  top: 0;
-	 
+	  top: 0;	 
 	}
 
 }
-
 
 .popout{
 	background-color:white;
@@ -179,46 +162,32 @@ $gray:#666666;
 		color:black;
 	}
  }
-
 }
 
-
-
-
-
 .form{
+	border-top:2px solid $dark-gray;
+	padding-top:15px;
+	margin:50px;
 	margin-top: 0px;
 	height:500px;
 	input{
 		margin:20px;
-		
 	}
 	textarea{
 		margin:20px;
 	}
 	#name{
-
 		width:50%;
 	}
 	#message{
 		width:50%;
 		height:10em;
 	}
-
 }
-
-
 
 body{
-	
-
-    background: linear-gradient(to bottom, $gray,$gray );
-
+    background-color:$gray;
 }
-
-
-
-// $breakpoint-phone-portrait: 480px;
 
 @import "tablet_media_query";
 
