@@ -18,6 +18,7 @@ $gray: 		#eaeaea;
    	  	background: rgba(0, 0, 0, 0.5);
 		color:white;
 		font-size: 4em;
+		font-family: 'Lato',sans-serif;
 		margin-left: 30px;
 		padding:5px;
 	}
@@ -43,6 +44,7 @@ $gray: 		#eaeaea;
 			margin-top:3%;
 			font-size:4em;
 			color:white;
+			font-family: 'Lato',sans-serif;
 		}
 	}
 	.about{
@@ -54,8 +56,12 @@ $gray: 		#eaeaea;
 		padding:10px;
 		text-align: center;
 		p{
+			padding:20px;
 			color:$dark-gray;
 			font-size: 1.5em;
+			font-family: 'Lato',sans-serif;
+			border-left: 3px solid $dark-gray;
+			font-style: oblique;
 		}
 	}
 }
@@ -69,6 +75,7 @@ $gray: 		#eaeaea;
 	button{
 		display:inline-block;
 		margin-right:100px;
+		font-family: 'Lato',sans-serif;
 	}
 }
 
@@ -170,6 +177,8 @@ $gray: 		#eaeaea;
 	margin:50px;
 	margin-top: 0px;
 	height:500px;
+	font-family: 'Lato',sans-serif;
+	font-weight:bold;
 	input{
 		margin:20px;
 	}
@@ -177,9 +186,15 @@ $gray: 		#eaeaea;
 		margin:20px;
 	}
 	#name{
-		width:50%;
+		width:20%;
+	}
+	#email{
+		margin-top: 0;
+		width:20%;
 	}
 	#message{
+		font-weight: normal;
+		margin-left: 0;
 		width:50%;
 		height:10em;
 	}

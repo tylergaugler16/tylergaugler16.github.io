@@ -11,6 +11,7 @@
     background: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 4em;
+    font-family: 'Lato',sans-serif;
     margin-left: 30px;
     padding: 5px; }
 
@@ -33,7 +34,8 @@
       display: block;
       margin-top: 3%;
       font-size: 4em;
-      color: white; }
+      color: white;
+      font-family: 'Lato',sans-serif; }
   .top-block .about {
     position: relative;
     margin-top: 5%;
@@ -43,8 +45,12 @@
     padding: 10px;
     text-align: center; }
     .top-block .about p {
+      padding: 20px;
       color: #666666;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      font-family: 'Lato',sans-serif;
+      border-left: 3px solid #666666;
+      font-style: oblique; }
 
 .button-navbar {
   width: 100%;
@@ -53,7 +59,8 @@
   z-index: 100; }
   .button-navbar button {
     display: inline-block;
-    margin-right: 100px; }
+    margin-right: 100px;
+    font-family: 'Lato',sans-serif; }
 
 .stick {
   position: fixed;
@@ -131,14 +138,21 @@
   padding-top: 15px;
   margin: 50px;
   margin-top: 0px;
-  height: 500px; }
+  height: 500px;
+  font-family: 'Lato',sans-serif;
+  font-weight: bold; }
   .form input {
     margin: 20px; }
   .form textarea {
     margin: 20px; }
   .form #name {
-    width: 50%; }
+    width: 20%; }
+  .form #email {
+    margin-top: 0;
+    width: 20%; }
   .form #message {
+    font-weight: normal;
+    margin-left: 0;
     width: 50%;
     height: 10em; }
 
