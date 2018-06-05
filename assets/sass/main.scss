@@ -1,0 +1,191 @@
+@import "bulma.sass";
+$primary: #010101;
+// $link:
+// $success:
+// $main-font:
+// $secondary-font:
+$gray: #EBF2FA;
+$white: #F7F7F2;
+// $cyan:
+// $darker-gray:
+// $highlight-blue:
+// $darker-red:
+$red: #A30B37;
+$black: #010101;
+$light-blue: #9DD1F1;
+// $light-gray:
+$blue: #5DA9E9;
+// $darker-blue:
+// $very-light-gray:
+// $purple:
+// $menu-item-color:
+// $menu-item-hover-background-color:
+// $menu-item-hover-color:
+// $menu-item-active-color:
+// $menu-item-active-background-color:
+
+.has-black-background{
+  background-color: $black;
+}
+.has-gray-background{
+  background-color: $gray;
+}
+.has-light-blue-background{
+  background-color: $light-blue;
+}
+.is-light-blue{
+  color: $light-blue;
+}
+.is-black{
+  color: $black;
+}
+.is-fullheight{
+  height: 100vh;
+}
+.is-fullheight-percent{
+  height: 100%;
+}
+.column.align-bottom{
+  align-self: flex-end;
+}
+.column.is-centered{
+  text-align: center;
+}
+.columns.is-column-based{
+  flex-direction: column;
+}
+
+
+.home-links-container{
+  align-content: flex-end;
+  margin-bottom: 20px!important;
+  color: #9DD1F1;
+}
+
+$white-2: #F0EFF4;
+$charcoal: #3A3E3B;
+$red-2: #FB3640;
+$green: #6B8F71;
+$teal: #3E8989;
+$blue: #145C9E;
+.has-white-2-background{
+  background-color: $white-2;
+}
+.has-charcoal-background{
+  background-color: $charcoal;
+}
+.has-teal-background{
+  background-color: $teal;
+}
+.is-red2{
+  color: $red-2;
+}
+.is-teal{
+  color: $teal;
+}
+.now-has-white-background{
+  background-color: $white-2!important;
+  transition: all 1s;
+}
+
+
+.is-fixed{
+  position: fixed;
+}
+.is-relative{
+  position: relative;
+}
+.is-sidebar{
+  width: 200px;
+  .navigation-tabs{
+    .columns{
+      height: 100%;
+      .column{
+
+        .navigation-tab{
+          line-height: 40px;
+          margin-top: 30px;
+          height: 40px;
+          width: 100%;
+          background-color: $blue;
+          transition: all 1s;
+          span{
+            height: 40px;
+            padding: 5px 8px;
+            color: $white-2;
+            margin-right: 0px;
+            transition: all 1s;
+          }
+          &.is-active {
+            background-color: $teal;
+            span{
+              margin-right: -2em;
+              transition: all 1s;
+              background-color: $teal;
+            }
+          }
+        }
+      }
+    }
+    &.teal-theme .navigation-tab{
+      background-color: $teal!important;
+      &.is-active {
+        background-color: $blue!important;
+        span{
+          background-color: $blue!important;
+        }
+      }
+    }
+
+  }
+}
+.is-main-content{
+  margin-left: 200px!important;
+}
+
+
+
+.center-home-content{
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .profile-circle{
+    // border: 6px solid #A8763E;
+    border: 6px solid $teal;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: $black;
+    position: relative;
+    // top: 38%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    overflow-x: hidden;
+    img{
+      max-height: 300px;
+      width: auto;
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+  }
+  .name-and-title{
+    text-align: center;
+    h1{
+      margin-top: 25px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.about-me-section{
+  background-color: $teal;
+  transition: all 1s;
+}
+.skills-section{
+  background-color: $blue;
+  transition: all 1s;
+}
