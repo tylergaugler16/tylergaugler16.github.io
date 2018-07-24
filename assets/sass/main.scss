@@ -5,14 +5,14 @@ $primary: #010101;
 // $success:
 $main-font: 'Montserrat', 'Open Sans';
 // $secondary-font:
-$gray: #EBF2FA;
+$gray: #88A2AA;
 $white: #F7F7F2;
 // $cyan:
 // $darker-gray:
 // $highlight-blue:
 // $darker-red:
 $red: #A30B37;
-$black: #010101;
+$black: #070707;
 $light-blue: #9DD1F1;
 // $light-gray:
 $blue: #5DA9E9;
@@ -27,6 +27,18 @@ $blue: #5DA9E9;
 
 .has-black-background{
   background-color: $black;
+}
+.has-pink-background{
+  background-color: #EF6F6C;
+}
+.has-dark-blue-background{
+  background-color: #465775
+}
+.has-pastel-blue-background{
+  background-color: #A7CECB;
+}
+.has-green-background{
+  background-color: #5B6C5D;
 }
 .has-gray-background{
   background-color: $gray;
@@ -62,11 +74,13 @@ $blue: #5DA9E9;
     align-items: center;
     display: flex;
 }
-.title{
+.title{ 
   font-family: $main-font;
 }
 .section{
   height: 100vh;
+  font-size: 28px;
+  color: #ffffff;
 }
 .double-height{
   height: 200vh;

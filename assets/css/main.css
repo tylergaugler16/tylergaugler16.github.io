@@ -6421,10 +6421,22 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 .has-black-background {
-  background-color: #010101; }
+  background-color: #070707; }
+
+.has-pink-background {
+  background-color: #EF6F6C; }
+
+.has-dark-blue-background {
+  background-color: #465775; }
+
+.has-pastel-blue-background {
+  background-color: #A7CECB; }
+
+.has-green-background {
+  background-color: #5B6C5D; }
 
 .has-gray-background {
-  background-color: #EBF2FA; }
+  background-color: #88A2AA; }
 
 .has-light-blue-background {
   background-color: #9DD1F1; }
@@ -6433,7 +6445,7 @@ label.panel-block {
   color: #9DD1F1; }
 
 .is-black {
-  color: #010101; }
+  color: #070707; }
 
 .is-fullheight {
   height: 100vh; }
@@ -6461,7 +6473,9 @@ label.panel-block {
   font-family: "Montserrat", "Open Sans"; }
 
 .section {
-  height: 100vh; }
+  height: 100vh;
+  font-size: 28px;
+  color: #ffffff; }
 
 .double-height {
   height: 200vh; }
