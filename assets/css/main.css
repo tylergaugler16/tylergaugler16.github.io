@@ -1,4 +1,5 @@
 /*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -6418,3 +6419,54 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
+.has-black-background {
+  background-color: #010101; }
+
+.has-gray-background {
+  background-color: #EBF2FA; }
+
+.has-light-blue-background {
+  background-color: #9DD1F1; }
+
+.is-light-blue {
+  color: #9DD1F1; }
+
+.is-black {
+  color: #010101; }
+
+.is-fullheight {
+  height: 100vh; }
+
+.is-fullheight-percent {
+  height: 100%; }
+
+.is-halfheight {
+  height: 50%; }
+
+.column.align-bottom {
+  align-self: flex-end; }
+
+.column.is-centered {
+  text-align: center; }
+
+.columns.is-column-based {
+  flex-direction: column; }
+
+.is-vertically-centerd {
+  align-items: center;
+  display: flex; }
+
+.title {
+  font-family: "Montserrat", "Open Sans"; }
+
+.section {
+  height: 100vh; }
+
+.double-height {
+  height: 200vh; }
+
+.test {
+  height: 1000px;
+  background-color: green;
+  width: 20px; }

@@ -1,19 +1,21 @@
 @import "bulma.sass";
-// $primary:
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+$primary: #010101;
 // $link:
 // $success:
-// $main-font:
+$main-font: 'Montserrat', 'Open Sans';
 // $secondary-font:
-// $gray:
-// $white:
+$gray: #EBF2FA;
+$white: #F7F7F2;
 // $cyan:
 // $darker-gray:
 // $highlight-blue:
 // $darker-red:
-// $red:
-// $black:
+$red: #A30B37;
+$black: #010101;
+$light-blue: #9DD1F1;
 // $light-gray:
-// $blue:
+$blue: #5DA9E9;
 // $darker-blue:
 // $very-light-gray:
 // $purple:
@@ -22,3 +24,55 @@
 // $menu-item-hover-color:
 // $menu-item-active-color:
 // $menu-item-active-background-color:
+
+.has-black-background{
+  background-color: $black;
+}
+.has-gray-background{
+  background-color: $gray;
+}
+.has-light-blue-background{
+  background-color: $light-blue;
+}
+.is-light-blue{
+  color: $light-blue;
+}
+.is-black{
+  color: $black;
+}
+.is-fullheight{
+  height: 100vh;
+}
+.is-fullheight-percent{
+  height: 100%;
+}
+.is-halfheight{
+  height: 50%;
+}
+.column.align-bottom{
+  align-self: flex-end;
+}
+.column.is-centered{
+  text-align: center;
+}
+.columns.is-column-based{
+  flex-direction: column;
+}
+.is-vertically-centerd{
+    align-items: center;
+    display: flex;
+}
+.title{
+  font-family: $main-font;
+}
+.section{
+  height: 100vh;
+}
+.double-height{
+  height: 200vh;
+}
+.test{
+  height: 1000px;
+  background-color: green;
+  width: 20px;
+}
