@@ -1,0 +1,25 @@
+{
+  "name": "tylergaugler16.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "open index.html && gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylergaugler16/tylergaugler16.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylergaugler16/tylergaugler16.github.io/issues"
+  },
+  "homepage": "https://github.com/tylergaugler16/tylergaugler16.github.io#readme",
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
