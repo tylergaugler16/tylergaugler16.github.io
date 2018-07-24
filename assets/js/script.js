@@ -4,6 +4,7 @@ $(document).ready(function() {
 		// autoScrolling:true,
 		// scroll: true,
     scrollOverflow: true,
+    scrollingSpeed: 1000,
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
 	});
 
