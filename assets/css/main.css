@@ -6441,9 +6441,6 @@ label.panel-block {
 .has-light-blue-background {
   background-color: #9DD1F1; }
 
-.is-light-blue {
-  color: #9DD1F1; }
-
 .is-black {
   color: #070707; }
 
@@ -6476,11 +6473,3 @@ label.panel-block {
   height: 100vh;
   font-size: 28px;
   color: #ffffff; }
-
-.double-height {
-  height: 200vh; }
-
-.test {
-  height: 1000px;
-  background-color: green;
-  width: 20px; }

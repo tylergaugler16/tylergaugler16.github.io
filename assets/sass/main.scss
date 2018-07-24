@@ -46,9 +46,6 @@ $blue: #5DA9E9;
 .has-light-blue-background{
   background-color: $light-blue;
 }
-.is-light-blue{
-  color: $light-blue;
-}
 .is-black{
   color: $black;
 }
@@ -74,19 +71,11 @@ $blue: #5DA9E9;
     align-items: center;
     display: flex;
 }
-.title{ 
+.title{
   font-family: $main-font;
 }
 .section{
   height: 100vh;
   font-size: 28px;
   color: #ffffff;
-}
-.double-height{
-  height: 200vh;
-}
-.test{
-  height: 1000px;
-  background-color: green;
-  width: 20px;
 }
