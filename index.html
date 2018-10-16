@@ -5,27 +5,207 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/devicon.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.css" />
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-  <script
+  <!-- <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/vendors/scrolloverflow.min.js" charset="utf-8"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/scroll-snap-polyfill.js" charset="utf-8"></script>
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/vendors/scrolloverflow.min.js" charset="utf-8"></script> -->
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.js"></script>
-  <!-- <script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.js"></script> -->
 
   <script type="text/javascript" src="assets/js/script.js"></script>
   <title>Yerr</title>
 </head>
 <body>
-  <div id="fullpage">
-	<div class="section has-pink-background">Sari!</div>
-	<div class="section has-dark-blue-background">You are mad cute!</div>
-	<div class="section has-pastel-blue-background">You my baby!</div>
-	<div class="section has-green-background">Sending a big hug!</div>
+
+
+  <div class="doc-scroller" id="fullpage">
+    <div class="section has-gray-background first-section draw">
+      <div class="first-section-content">
+        <h1 class="title is-1 ">Tyler Gaugler</h1>
+      </div>
+
+    </div>
+
+
+
+    <div class="section has-gray-background skills-section-v2 has-small-padding">
+      <div class="columns is-fullwidth is-gapless is-full-viewport-height has-small-padding first-container">
+        <div class="column is-4">
+          <h1 class="title is-2 has-text-centered">Frontend Skills</h1>
+          <ul class="frontend-skills-list">
+            <li><span>Bootstrap</span><i class="devicon-bootstrap-plain"></i></li>
+            <li><span>CSS</span> <i class="devicon-css3-plain"></i></li>
+            <li><span>HTML</span><i class="devicon-html5-plain"></i></li>
+            <li><span>Javascript</span><i class="devicon-javascript-plain"></i></li>
+            <li><span>JQuery</span><i class="devicon-jquery-plain"></i></li>
+            <li><span>React.js</span><i class="devicon-react-original"></i></li>
+            <li><span>Sass</span><i class="devicon-sass-original"></i></li>
+            <li><span>Typescript</span><i class="devicon-typescript-plain"></i></li>
+            <li><span>Bulma</span></li>
+          </ul>
+        </div>
+        <div class="column is-4">
+          <h1 class="title is-2 has-text-centered">Backend Skills/Tools</h1>
+          <ul class="backend-skills-list">
+            <li><span>MongoDB</span><i class="devicon-mongodb-plain"></i></li>
+            <li><span>Mysql</span><i class="devicon-mysql-plain"></i></li>
+            <li><span>Node.js</span><i class="devicon-nodejs-plain"></i></li>
+            <li><span>Postgres</span><i class="devicon-postgresql-plain"></i></li>
+            <li><span>Ruby on Rails</span><i class="devicon-rails-plain"></i></li>
+            <li><span>Ruby</span><i class="devicon-ruby-plain"></i></li>
+            <li><span>Graphql</span></li>
+          </ul>
+        </div>
+        <div class="column is-4">
+          <h1 class="title is-2 has-text-centered">Other Skills/Tools</h1>
+          <ul class="other-skills-list">
+            <li><span>Git</span> <i class="devicon-git-plain"></i></li>
+            <li><span>Gulp</span><i class="devicon-gulp-plain"></i></li>
+            <li><span>Heroku</span> <i class="devicon-heroku-plain"></i></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="section">
+  <div class="columns is-fullwidth is-gapless is-full-viewport-height">
+    <div class="colum is-12">
+        <h1 class="title is-1 ">Experience</h1>
+      <div class="experience-container">
+        <div class="experience-circle">Waywire</div>
+        <div class="experience-circle">Healthie</div>
+        <div class="experience-circle">MBC</div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+	<div class="section has-gray-background" id="trigger-skills">
+    <div class="columns is-fullwidth is-gapless is-full-viewport-height">
+
+      <div class="column is-9 has-gray-background project-filter">
+        <div class="slider-container is-fullwidth is-fullheight">
+
+          <div class="view">
+
+              <ul class="projects">
+                <li>
+                  <div>
+                    <div class="project-title">
+                      <h1 class="title is-2">Project 1</h1>
+                    </div>
+                    <img src="assets/images/imac.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div class="project-title">
+                      <h1 class="title is-2">Project 2</h1>
+                    </div>
+                    <img src="assets/images/imac.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div class="project-title">
+                      <h1 class="title is-2">Project 3</h1>
+                    </div>
+                    <img src="assets/images/imac.png" alt="">
+                  </div>
+                </li>
+              </ul>
+
+          </div>
+
+          <div class="project-description" data-index="1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat, placerat ac elit at, blandit lobortis purus. Nam sed erat consectetur, lacinia ligula quis, blandit arcu. Donec vitae placerat nibh, tempus interdum magna. Aliquam posuere aliquam egestas. Duis aliquet mauris sed congue fringilla. Proin sed tincidunt urna. Duis at nunc nisi. Nullam porta massa eu nunc faucibus vulputate. Mauris aliquet at ligula non viverra. Cras feugiat ornare lectus, quis bibendum tellus facilisis sit amet. Nulla facilisi. Praesent scelerisque nisi sit amet quam rutrum, feugiat sodales orci sollicitudin. Donec laoreet orci nec mollis viverra.
+          </div>
+          <div class="project-description" data-index="2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat, placerat ac elit at, blandit lobortis purus. Nam sed erat consectetur, lacinia ligula quis, blandit arcu. Donec vitae placerat nibh, tempus interdum magna. Aliquam posuere aliquam egestas. Duis aliquet mauris sed congue fringilla. Proin sed tincidunt urna. Duis at nun
+          </div>
+          <div class="project-description" data-index="3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat, placerat ac elit at, blandit lobortis purus. Nam sed erat consectetur, lacinia ligula quis, blandit arcu. Donec vitae placerat nibh, tempus interdum magna. Aliquam posuere aliquam egestas. Duis aliquet mauris sed congue fringilla. Proin sed tincidunt urna. Duis at nunc nisi. Nullam porta massa eu nunc faucibus vulputate. Mauris aliquet at ligula non vivec mollis viverra.
+          </div>
+
+          <div class="project-controls">
+            <ul class="triggers">
+               <li id="project1" data-filter="project1">Project 1</li>
+               <li id="project2" data-filter="project2">Project 2</li>
+               <li id="project3" data-filter="project3">Prject 3</li>
+            </ul>
+          </div>
+
+          <!-- <span class="control prev">Prev</span>
+          <span class="control next">Next</span> -->
+
+
+          <!-- <h1 class="title is-1" >Projects</h1> -->
+          <!-- <span id="project1"  data-filter="project1">Project 1</span>
+          <span id="project2"  data-filter="project2">Project 2</span>
+          <span id="project3"  data-filter="project3">Project 3</span> -->
+        </div>
+
+
+
+
+      </div>
+      <div class="column is-3  has-gray-background skills-section"  data-aos="fade-left" data-aos-duration="800" data-aos-anchor="#trigger-skills" data-aos-anchor-placement="top-top" data-aos-offset="-80">
+        <div class="all-skills-flexbox">
+          <div class="backend-skills">
+            <h1 class="title is-2">Backend</h1>
+            <div class="skills-flexbox">
+              <span class="skill project1" project1="true" project3="true">Ruby on Rails</span>
+              <span class="skill" project2="true">Express</span>
+              <span class="skill" project2="true" project1="true">Node.js</span>
+              <span class="skill project1" project1="true" project3="true">Graphql</span>
+              <span class="skill" project2="true">Mongodb</span>
+            </div>
+          </div>
+          <div class="frontend-skills">
+            <h1 class="title is-2">Frontend</h1>
+            <div class="skills-flexbox">
+              <span class="skill" project1="true" project2="true" project3="true">Html/CSS</span>
+              <span class="skill" project1="true">JQuery</span>
+              <span class="skill" project2="true">React.js</span>
+              <span class="skill" project3="true" project2="true">Bulma/Bootstrap</span>
+              <span class="skill" project3="true">Another one</span>
+            </div>
+
+          </div>
+          <div class="other-skills">
+            <h1 class="title is-2">Other</h1>
+            <div class="skills-flexbox">
+              <span class="skill"  project3="true" project2="true">Heroku/AWS</span>
+              <span class="skill" project1="true">Gulp</span>
+              <span class="skill" project2="true">Grunt</span>
+              <span class="skill" project3="true">Another one</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+	<div class="section has-gray-background">Sending a big hug!</div>
   <div class="section has-gray-background">#youmyfave</div>
 </div>
 </body>
