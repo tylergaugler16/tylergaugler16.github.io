@@ -6612,14 +6612,53 @@ ul.projects li {
   left: 180px; }
 
 .first-section .first-section-content {
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .first-section .first-section-content h1 {
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center; }
+  .first-section .first-section-content .bio-and-header h1 {
     font-size: 42px;
     color: #F7F7F2;
-    border-bottom: 2px solid #5995ED; }
+    display: inline-block;
+    position: relative;
+    transition: all 1s ease-in-out; }
+    .first-section .first-section-content .bio-and-header h1:before, .first-section .first-section-content .bio-and-header h1:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: all 1s ease-in-out;
+      transition-duration: 0.75s;
+      opacity: 0; }
+    .first-section .first-section-content .bio-and-header h1:before {
+      left: calc(50%);
+      background-color: #EF6F6C; }
+    .first-section .first-section-content .bio-and-header h1:after {
+      right: calc(50%);
+      background-color: #EF6F6C; }
+  .first-section .first-section-content .bio-and-header p {
+    color: #F7F7F2; }
+  .first-section .first-section-content .personal-links {
+    align-self: stretch;
+    margin-left: 25px;
+    overflow-x: hidden; }
+    .first-section .first-section-content .personal-links .personal-links-flexbox {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .first-section .first-section-content .personal-links .personal-links-flexbox li {
+        margin: 7px 0px; }
+        .first-section .first-section-content .personal-links .personal-links-flexbox li a, .first-section .first-section-content .personal-links .personal-links-flexbox li a:hover, .first-section .first-section-content .personal-links .personal-links-flexbox li a:visited, .first-section .first-section-content .personal-links .personal-links-flexbox li a:active {
+          color: #EF6F6C;
+          font-weight: 700; }
 
 .first-section::before, .first-section::after {
   box-sizing: inherit;
@@ -6653,6 +6692,11 @@ ul.projects li {
     border-bottom-color: #5995ED;
     border-left-color: #5995ED;
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+
+.first-section.animate .bio-and-header h1:before, .first-section.animate .bio-and-header h1:after {
+  width: 50%;
+  opacity: 1;
+  transition: all 1s ease-in-out; }
 
 .skills-section-v2 ul {
   width: 80%;
