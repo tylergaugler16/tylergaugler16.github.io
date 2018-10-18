@@ -1,9 +1,20 @@
+const $backgroundYellow = "#FFD200";
+const $backgroundGray = "#e1e5ee";
+const $backgroundRed = "#D33F49";
+const $backgroundGreen = "#73BFB8";
+
 $(document).ready(function() {
   $("#fullpage").fullpage({
     //options here
     // autoScrolling:true,
     // scroll: true,
-    sectionsColor: ["#044389", "#e1e5ee", "#ffd200", "#7CAFC4", "#73BFB8"],
+    sectionsColor: [
+      "#044389",
+      $backgroundGreen,
+      "#ffd200",
+      "#7CAFC4",
+      "#73BFB8"
+    ],
     scrollingSpeed: 800,
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     onLeave: function(origin, destination, direction) {
@@ -16,6 +27,15 @@ $(document).ready(function() {
       if (destination.index === 0) {
         setTimeout(() => $(".first-section").addClass("hovered animate"), 800);
       }
+
+      if(origin.index === 2 ){
+          // setTimeout(() => $(".experience-section").removeClass("animate"), 800);
+          $(".experience-section").removeClass("animate")
+      }
+      if(destination.index === 2){
+        setTimeout(() => $(".experience-section").addClass("animate"), 200);
+      }
+
     }
   });
   //methods
@@ -111,6 +131,31 @@ $(document).ready(function() {
 //     }
 //   };
 // });
+
+
+
+$(document).on('click', '.healthie-trigger', function(){
+  $('.healthie-trigger').addClass('active-circle');
+  $('.waywire-trigger').removeClass('active-circle');
+  $('.waywire-description')
+    .removeClass('is-animated selected')
+    .fadeOut()
+    .promise()
+    .done(function(){
+      $('.healthie-description').addClass('is-animated selected').fadeIn();
+    })
+})
+$(document).on('click', '.waywire-trigger', function(){
+  $('.waywire-trigger').addClass('active-circle');
+  $('.healthie-trigger').removeClass('active-circle');
+  $('.healthie-description')
+    .removeClass('is-animated')
+    .fadeOut()
+    .promise()
+    .done(function(){
+      $('.waywire-description').addClass('is-animated').fadeIn();
+    })
+})
 
 $(document).ready(function() {
   $(".first-section.draw").addClass("hovered animate");

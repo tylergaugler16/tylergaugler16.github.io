@@ -6450,6 +6450,9 @@ label.panel-block {
 .is-black {
   color: #070707; }
 
+.is-white {
+  color: #ffffff; }
+
 .is-full-viewport-height {
   height: 100vh; }
 
@@ -6489,7 +6492,8 @@ label.panel-block {
 
 .title.is-1 {
   font-family: "Montserrat", "Open Sans";
-  font-size: 28px; }
+  font-size: 32px;
+  font-weight: 900; }
 
 .title.is-2 {
   font-family: "Montserrat", "Open Sans";
@@ -6621,7 +6625,7 @@ ul.projects li {
   align-items: center; }
   .first-section .first-section-content .bio-and-header h1 {
     font-size: 42px;
-    color: #F7F7F2;
+    color: #ffffff;
     display: inline-block;
     position: relative;
     transition: all 1s ease-in-out; }
@@ -6642,7 +6646,7 @@ ul.projects li {
       right: calc(50%);
       background-color: #EF6F6C; }
   .first-section .first-section-content .bio-and-header p {
-    color: #F7F7F2; }
+    color: #ffffff; }
   .first-section .first-section-content .personal-links {
     align-self: stretch;
     margin-left: 25px;
@@ -6698,13 +6702,19 @@ ul.projects li {
   opacity: 1;
   transition: all 1s ease-in-out; }
 
+.skills-section-v2 .skills-main-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
 .skills-section-v2 ul {
   width: 80%;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  text-align: center; }
   .skills-section-v2 ul li {
     width: auto;
-    background-color: #5995ED;
+    background-color: #3E7CB1;
     border-radius: 5px;
     font-size: 16px;
     padding: 10px 20px;
@@ -6747,15 +6757,61 @@ ul.projects li {
   .skills-section-v2.active ul li:nth-child(9) {
     transition-delay: 1.44s; }
 
-.experience-container {
+.experience-section .experience-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -50%) scale(0.3);
+  transition: all 800ms;
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap; }
-  .experience-container .experience-circle {
-    width: 300px;
-    height: 300px;
-    background-color: #E1E5EE;
-    margin: 15px;
-    border-radius: 50%; }
+  .experience-section .experience-container .experience-circle {
+    cursor: pointer;
+    width: 240px;
+    height: 240px;
+    background-color: #ffffff;
+    margin: 30px;
+    border-radius: 50%;
+    position: relative;
+    transform: scale(1);
+    transition: 0.5s; }
+    .experience-section .experience-container .experience-circle .experience-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 220px;
+      max-height: 220px; }
+      .experience-section .experience-container .experience-circle .experience-content img {
+        width: 100%; }
+    .experience-section .experience-container .experience-circle.active-circle {
+      transform: scale(1.3);
+      transition: 0.5s; }
+
+.experience-section .column.is-5, .experience-section .column.is-7 {
+  position: relative; }
+
+.experience-section .experience-header {
+  position: absolute;
+  top: calc(15% - 16px);
+  left: 50%;
+  transform: translateX(-50%); }
+
+.experience-section .job-description-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70%;
+  width: 95%;
+  background-color: #ffffff;
+  color: #070707; }
+  .experience-section .job-description-container .job-description:not(.selected) {
+    display: none; }
+
+.experience-section.animate .experience-container {
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 800ms; }
