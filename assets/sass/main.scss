@@ -271,6 +271,62 @@ ul.projects li {
 
 // v2
 
+#menu li {
+	display:block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 50%;
+            border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+  transition: all .4s;
+  transform: scale(1.5);
+  a{
+    transform: scale(1.5);
+  }
+}
+#menu li a{
+  -webkit-border-radius: 50%;
+            border-radius: 50%;
+  width: 10px;
+  height: 10px;
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:50%;
+	right:15px;
+  transform: translateY(-50%);
+	z-index: 70;
+	padding: 0;
+	margin:0;
+}
+.fp-slidesContainer{
+   transition-duration:0ms!important;
+}
+
 $animate-underline: all 1s ease-in-out;
 
 
@@ -547,7 +603,7 @@ $animate-underline: all 1s ease-in-out;
     bottom: 0;
     left: 0;
     height: 70%;
-    width: 95%;
+    width: 92%;
     background-color: $white;
     color: $black;
     .job-description:not(.selected){
@@ -563,5 +619,33 @@ $animate-underline: all 1s ease-in-out;
         transition: all 800ms;
       }
 
+  }
+}
+
+.projects-section{
+  svg{
+    display: block;
+    margin: 0 auto;
+  }
+  .node {
+    cursor: pointer;
+  }
+
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 5px;
+  }
+
+  .node text {
+    font-size: 12px;
+    color: $white;
+    fill: $white;
+  }
+
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 5px;
   }
 }
