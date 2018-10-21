@@ -11,3 +11,4 @@ https://codepen.io/giana/pen/yYBpVY
 
 https://www.kunkalabs.com/mixitup-multifilter/
 ^^ is what http://findmatthew.com/ uses for filtering projects
+^^ we can do this with skills with the filters: 'Comfortablle with', 'Exposure to', etc.

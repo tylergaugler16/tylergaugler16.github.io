@@ -195,6 +195,7 @@ var treeData = [
         "name": "YouNote",
         "parent": "Projects",
         "project_id": "younote",
+        "is_project": "true",
         "children": [
           {
             "name": "Tech Stack",
@@ -223,24 +224,30 @@ var treeData = [
       {
         "name": "Attendance/Registration Mangement System",
         "parent": "Projects",
+        "is_project": "true",
+        "project_id": "mbc-register",
         "children": [
           {
             "name": "Tech Stack",
             "parent": "Attendance/Registration Mangement System",
+            "project_id": "mbc-register",
             "children": [
               {
                 "name": "Node.js",
-                "parent": "Tech Stack"
+                "parent": "Tech Stack",
+                "project_id": "mbc-register",
               },
               {
                 "name": "Express.js",
-                "parent": "Tech Stack"
+                "parent": "Tech Stack",
+                "project_id": "mbc-register",
               }
             ]
           },
           {
             "name": "Description",
-            "parent": "Attendance/Registration Mangement System"
+            "parent": "Attendance/Registration Mangement System",
+            "project_id": "mbc-register",
           }
         ]
       }
@@ -265,7 +272,7 @@ $(document).ready(function(){
   var diagonal = d3.svg.diagonal()
   	.projection(function(d) { return [d.y, d.x]; });
 
-  var svg = d3.select(".projects-section .fp-tableCell").append("svg")
+  var svg = d3.select(".projects-section .fp-tableCell .svg-container").append("svg")
   	.attr("width", width + margin.right + margin.left)
   	.attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -302,9 +309,10 @@ $(document).ready(function(){
   	  .data(nodes, function(d) { return d.id || (d.id = ++i); });
 
 
+
     // Enter any new nodes at the parent's previous position.
     var nodeEnter = node.enter().append("g")
-  	  .attr("class", "node")
+  	  .attr("class", 'node')
   	  .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
   	  .on("click", click);
 
@@ -314,7 +322,7 @@ $(document).ready(function(){
 
     nodeEnter.append("text")
   	  .attr("x", function(d) { return d.children || d._children ? -25 : 25; })
-  	  .attr("dy", ".45em")
+  	  .attr("dy", ".18em")
   	  .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
   	  .text(function(d) { return d.name; })
   	  .style("fill-opacity", 1e-6);
@@ -384,6 +392,12 @@ $(document).ready(function(){
   	d._children = d.children;
   	d.children = null;
     } else {
+    if(d.is_project == "true"){
+      alert(d.project_id);
+      $('.project-description.active').removeClass('active');
+      $('.project-description.'+d.project_id).addClass('active');
+
+    }
   	d.children = d._children;
   	d._children = null;
     }
