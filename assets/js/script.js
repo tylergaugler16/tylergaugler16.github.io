@@ -23,6 +23,8 @@ $(document).ready(function() {
       $backgroundLightBlue,
     ],
     scrolloverflow: true,
+    parallax: true,
+    percentage: 100,
     anchors: ['home', 'skills', 'projects', 'experience', 'contact'],
     scrollingSpeed: 800,
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
@@ -143,7 +145,6 @@ $(document).ready(function() {
 //     }
 //   };
 // });
-
 
 
 $(document).on('click', '.healthie-trigger', function(){
@@ -392,10 +393,18 @@ $(document).ready(function(){
   	d._children = d.children;
   	d.children = null;
     } else {
-    if(d.is_project == "true"){
-      alert(d.project_id);
-      $('.project-description.active').removeClass('active');
-      $('.project-description.'+d.project_id).addClass('active');
+
+    if(d.project_id){
+      // $('.project-description.active').removeClass('active');
+      // $('.project-description.'+d.project_id).addClass('active');
+
+        $('.project-description.active')
+        .removeClass('active')
+        .fadeOut()
+        .promise()
+        .done(function(){
+          $('.project-description.'+d.project_id).addClass('active').fadeIn();
+        })
 
     }
   	d.children = d._children;

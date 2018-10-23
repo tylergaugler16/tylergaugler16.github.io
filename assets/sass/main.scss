@@ -190,28 +190,28 @@ $blue: #5995ED;
   // animation: .6s rotate-right;
 }
 
-.slider-container{
-  position: relative;
-  display: flex;
-  padding: 0px 20px;
-  flex-direction: column;
-
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 100px;
-
-  .project-description{
-    max-width: 100%;
-    display: none;
-    opacity: 0;
-    transition: all 0.3s;
-    &.selected{
-      transition: all 0.3s;
-      opacity: 1;
-      display: block;
-    }
-  }
-}
+// .slider-container{
+//   position: relative;
+//   display: flex;
+//   padding: 0px 20px;
+//   flex-direction: column;
+//
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   padding-bottom: 100px;
+//
+//   .project-description{
+//     max-width: 100%;
+//     display: none;
+//     opacity: 0;
+//     transition: all 0.3s;
+//     &.selected{
+//       transition: all 0.3s;
+//       opacity: 1;
+//       display: block;
+//     }
+//   }
+// }
 .left-arrow, .right-arrow{
   position: absolute;
   top: 50%;
@@ -635,6 +635,10 @@ $animate-underline: all 1s ease-in-out;
     width: 30%;
     display: inline-block;
     float: left;
+
+    .project-description:not(.active){
+      display: none;
+    }
   }
 
   svg{

@@ -6541,24 +6541,6 @@ label.panel-block {
 .is-animated {
   animation: .05s zoom-in; }
 
-.slider-container {
-  position: relative;
-  display: flex;
-  padding: 0px 20px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 100px; }
-  .slider-container .project-description {
-    max-width: 100%;
-    display: none;
-    opacity: 0;
-    transition: all 0.3s; }
-    .slider-container .project-description.selected {
-      transition: all 0.3s;
-      opacity: 1;
-      display: block; }
-
 .left-arrow, .right-arrow {
   position: absolute;
   top: 50%;
@@ -6882,6 +6864,8 @@ ul.projects li {
   width: 30%;
   display: inline-block;
   float: left; }
+  .projects-section .project-description-container .project-description:not(.active) {
+    display: none; }
 
 .projects-section svg {
   width: 100%;
