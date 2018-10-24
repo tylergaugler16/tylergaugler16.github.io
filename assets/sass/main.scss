@@ -348,7 +348,7 @@ bottom: 0;
 width: 100%;
 position: absolute;
 z-index: -1;
-    background-image:  url('https://images.pexels.com/photos/1000653/pexels-photo-1000653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image:  url('https://images.pexels.com/photos/162557/architecture-construction-build-building-162557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 background-position: center 60%;
   }
 }
@@ -372,9 +372,12 @@ background-position: center 60%;
 bottom: 0;
 width: 100%;
 position: absolute;
-z-index: -1;
-    background-image: url('https://images.pexels.com/photos/450597/pexels-photo-450597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-background-position: center 80%;
+z-index: -1; 
+    // background-image: url('https://images.pexels.com/photos/450597/pexels-photo-450597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/634043/pexels-photo-634043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    // background-image: url('../images/29147174732_a41268c2ca_o.jpg');
+background-position: center 50%;
+background-size: cover;
   }
   .first-section-content{
     position: fixed;
@@ -681,6 +684,9 @@ background-position: center 80%;
     width: 30%;
     display: inline-block;
     float: left;
+    .desktop-image{
+      max-width: 80%;
+    }
 
     .project-description:not(.active){
       display: none;
