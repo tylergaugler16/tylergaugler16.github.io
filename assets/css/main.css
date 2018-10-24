@@ -6650,6 +6650,42 @@ ul.projects li {
 .fp-slidesContainer {
   transition-duration: 0ms !important; }
 
+.second-section .fp-bg {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url("https://images.pexels.com/photos/34600/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center 60%; }
+
+.third-section .fp-bg {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url("https://images.pexels.com/photos/1000653/pexels-photo-1000653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center 60%; }
+
+.fourth-section .fp-bg {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url("https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center 60%; }
+
+.first-section .fp-bg {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url("https://images.pexels.com/photos/450597/pexels-photo-450597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center 80%; }
+
 .first-section .first-section-content {
   position: fixed;
   z-index: 100;
