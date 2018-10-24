@@ -6784,7 +6784,7 @@ ul.projects li {
   display: block;
   text-align: center; }
   .skills-section-v2 ul li {
-    width: auto;
+    width: 141px;
     background-color: #3E7CB1;
     border-radius: 5px;
     font-size: 12px;
@@ -6810,23 +6810,23 @@ ul.projects li {
   transform: scale(1);
   transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1); }
   .skills-section-v2.active ul li:nth-child(1) {
-    transition-delay: 0.16s; }
+    transition-delay: 0.36s; }
   .skills-section-v2.active ul li:nth-child(2) {
-    transition-delay: 0.32s; }
+    transition-delay: 0.52s; }
   .skills-section-v2.active ul li:nth-child(3) {
-    transition-delay: 0.48s; }
+    transition-delay: 0.68s; }
   .skills-section-v2.active ul li:nth-child(4) {
-    transition-delay: 0.64s; }
+    transition-delay: 0.84s; }
   .skills-section-v2.active ul li:nth-child(5) {
-    transition-delay: 0.8s; }
+    transition-delay: 1s; }
   .skills-section-v2.active ul li:nth-child(6) {
-    transition-delay: 0.96s; }
+    transition-delay: 1.16s; }
   .skills-section-v2.active ul li:nth-child(7) {
-    transition-delay: 1.12s; }
+    transition-delay: 1.32s; }
   .skills-section-v2.active ul li:nth-child(8) {
-    transition-delay: 1.28s; }
+    transition-delay: 1.48s; }
   .skills-section-v2.active ul li:nth-child(9) {
-    transition-delay: 1.44s; }
+    transition-delay: 1.64s; }
 
 .experience-section .experience-container {
   position: relative;

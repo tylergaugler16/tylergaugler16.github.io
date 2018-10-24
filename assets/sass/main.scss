@@ -530,7 +530,7 @@ background-position: center 80%;
     display: block;
     text-align: center;
     li{
-      width: auto;
+      width: 141px;
       // background-color: $blue;
       background-color: #3E7CB1;
       border-radius: 5px;
@@ -560,10 +560,11 @@ background-position: center 80%;
           opacity: 1;
           transform: translateX(0);
           transform: scale(1);
+
           transition: opacity .7s cubic-bezier(.165,.84,.44,1),transform .7s cubic-bezier(.165,.84,.44,1);
           @for $i from 1 through 9 {
               &:nth-child(#{$i}) {
-                transition-delay:   ($i * 0.16) + s;
+                transition-delay:   0.2 + ($i * 0.16) + s;
               }
             }
           }
