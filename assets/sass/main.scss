@@ -372,7 +372,7 @@ background-position: center 60%;
 bottom: 0;
 width: 100%;
 position: absolute;
-z-index: -1; 
+z-index: -1;
     // background-image: url('https://images.pexels.com/photos/450597/pexels-photo-450597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-image: url('https://images.pexels.com/photos/634043/pexels-photo-634043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     // background-image: url('../images/29147174732_a41268c2ca_o.jpg');
@@ -676,17 +676,47 @@ background-size: cover;
 
 .projects-section{
   .svg-container{
-    width: 70%;
+    width: 60%;
     display: inline-block;
     float: left;
+    position: relative;
+    height: 100vh;
+  }
+  .projects-header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc( ((100vh - 500px) / 2 ) + 20px);
+    h1.title{
+      color: $white;
+    }
   }
   .project-description-container{
-    width: 30%;
+    padding: 15px 0px 0px 15px;
+    position: relative;
+    transform: translateX(100%);
+    transition-delay: 900ms;
+    height: 100vh;
+    // background-color: $white;
+    width: 40%;
     display: inline-block;
     float: left;
-    .desktop-image{
-      max-width: 80%;
+    // .desktop-image{
+    //   max-width: 1-0%;
+    // }
+    .project-description{
+      h1{
+        color: $white;
+      }
+      position: relative;
+      .image-container{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $white;
+      }
     }
+
 
     .project-description:not(.active){
       display: none;
@@ -718,5 +748,12 @@ background-size: cover;
     fill: none;
     stroke: $white;
     stroke-width: 1px;
+  }
+  &.active{
+    .project-description-container{
+      transform: translateX(0%);
+      transition: 0.8s;
+      transition-delay: .2s;
+    }
   }
 }

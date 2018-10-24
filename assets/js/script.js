@@ -29,7 +29,7 @@ $(document).ready(function() {
     scrollingSpeed: 800,
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     menu: '#menu',
-
+    // easingcss3: ' cubic-bezier(0.000, 0.795, 0.680, 0.890)',
     onLeave: function(origin, destination, direction) {
       if (origin.index === 0) {
         setTimeout(
@@ -169,7 +169,7 @@ var treeData = [
 
 $(document).ready(function(){
   // ************** Generate the tree diagram	 *****************
-  var margin = {top: 20, right: 120, bottom: 20, left: 120},
+  var margin = {top: 20, right: 120, bottom: 20, left: 90},
   	width = 960 - margin.right - margin.left,
   	height = 500 - margin.top - margin.bottom;
 
@@ -194,6 +194,7 @@ $(document).ready(function(){
   root.y0 = 0;
 
   update(root);
+  console.log(root);
 
   // setTimeout(() => , 1000)
   // dft(root);
@@ -222,8 +223,9 @@ $(document).ready(function(){
 
 
     // Enter any new nodes at the parent's previous position.
+
     var nodeEnter = node.enter().append("g")
-  	  .attr("class", 'node')
+  	  .attr("class", function(d){ return d.is_project === "true"? d.project_id+' node' : 'node'})
   	  .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
   	  .on("click", click);
 
@@ -297,7 +299,7 @@ $(document).ready(function(){
 
   // Toggle children on click.
   function click(d) {
-    console.log(d);
+    // console.log(d);
     // change the displayed picture based on d.project_id. defined in the json
     if (d.children) {
   	d._children = d.children;
@@ -307,7 +309,7 @@ $(document).ready(function(){
     if(d.project_id){
       // $('.project-description.active').removeClass('active');
       // $('.project-description.'+d.project_id).addClass('active');
-
+        $('g.'+d.project_id+' circle').css('fill','green');
         $('.project-description.active')
         .removeClass('active')
         .fadeOut()
